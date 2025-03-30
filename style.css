@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+}
+
+#resultArea {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
