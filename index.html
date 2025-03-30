@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>レベル換算</title>
+    <title>メタ装備 コスト計算</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>レベル換算</h1>
+    <h1>メタ装備 コスト計算</h1>
     <div>
         <label for="currentLevelInput">現在のレベル:</label>
         <input type="number" id="currentLevelInput" placeholder="例: 240" onkeypress="focusTargetLevel(event)">
@@ -18,7 +18,7 @@
         <button onclick="calculateRequiredPulls()">必要回数を計算</button>
     </div>
     <div>
-        <label for="singleLevelInput">レベルを入力:</label>
+        <label for="singleLevelInput">1から作成時のレベルを入力:</label>
         <input type="number" id="singleLevelInput" placeholder="例: 300" onkeypress="handleKeyPressSingle(event)">
         <button onclick="calculateCost()">計算</button>
     </div>
@@ -27,7 +27,7 @@
         <h2>結果</h2>
         <p id="requiredPullsArea"></p>
         <p>完成コスト: <span id="completionCost"></span></p>
-        <p>ガチャ回数: <span id="gachaCount"></span></p>
+        <p>ガチャ回数期待値: <span id="gachaCount"></span></p>
     </div>
 
     <script src="script.js"></script>
